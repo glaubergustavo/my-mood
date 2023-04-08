@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5634E18029DFE2BB0053E9E4 /* MoodCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5634E17F29DFE2BB0053E9E4 /* MoodCollectionPresenter.swift */; };
 		5645D40B29DCC6FD00581F1C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 5645D40A29DCC6FD00581F1C /* Charts */; };
 		568C498B29D4F39000B7934C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C498A29D4F39000B7934C /* AppDelegate.swift */; };
 		568C498D29D4F39000B7934C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C498C29D4F39000B7934C /* SceneDelegate.swift */; };
@@ -19,14 +18,12 @@
 		568C49AC29D4F7D400B7934C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C49A529D4F4BB00B7934C /* HomePresenter.swift */; };
 		568C49AD29D4F7D400B7934C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C49A329D4F4BB00B7934C /* HomeViewController.swift */; };
 		568C525B29D52C9600B7934C /* MoodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C525A29D52C9600B7934C /* MoodObject.swift */; };
-		568C526329D5313300B7934C /* MoodCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C526229D5313300B7934C /* MoodCollectionViewController.swift */; };
 		56984A9C29DFA46200A40FB9 /* UtilFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56984A9B29DFA46200A40FB9 /* UtilFacade.swift */; };
 		56AD43F729D618EC009D5DFD /* MoodGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43F629D618EC009D5DFD /* MoodGraph.swift */; };
 		56AD43F929D61915009D5DFD /* MoodSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43F829D61915009D5DFD /* MoodSummary.swift */; };
 		56AD43FB29D61939009D5DFD /* MoodSummaryActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43FA29D61939009D5DFD /* MoodSummaryActivity.swift */; };
 		56AD43FD29D61956009D5DFD /* ChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43FC29D61956009D5DFD /* ChartItem.swift */; };
 		56AD43FF29D61A18009D5DFD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43FE29D61A18009D5DFD /* Extension.swift */; };
-		56AD440129D61AB1009D5DFD /* MoodCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AD440029D61AB1009D5DFD /* MoodCollection.xib */; };
 		56AD440329D61AD4009D5DFD /* MoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD440229D61AD4009D5DFD /* MoodCell.swift */; };
 		56AD440529D61AF1009D5DFD /* MoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AD440429D61AF1009D5DFD /* MoodCell.xib */; };
 		56AD440A29D61B9D009D5DFD /* MyMoodRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD440629D61B9D009D5DFD /* MyMoodRouter.swift */; };
@@ -60,7 +57,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5634E17F29DFE2BB0053E9E4 /* MoodCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCollectionPresenter.swift; sourceTree = "<group>"; };
 		568C498729D4F39000B7934C /* MyMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568C498A29D4F39000B7934C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568C498C29D4F39000B7934C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,14 +69,12 @@
 		568C49A529D4F4BB00B7934C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		568C49A629D4F4BB00B7934C /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		568C525A29D52C9600B7934C /* MoodObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodObject.swift; sourceTree = "<group>"; };
-		568C526229D5313300B7934C /* MoodCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCollectionViewController.swift; sourceTree = "<group>"; };
 		56984A9B29DFA46200A40FB9 /* UtilFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFacade.swift; sourceTree = "<group>"; };
 		56AD43F629D618EC009D5DFD /* MoodGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodGraph.swift; sourceTree = "<group>"; };
 		56AD43F829D61915009D5DFD /* MoodSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSummary.swift; sourceTree = "<group>"; };
 		56AD43FA29D61939009D5DFD /* MoodSummaryActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSummaryActivity.swift; sourceTree = "<group>"; };
 		56AD43FC29D61956009D5DFD /* ChartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartItem.swift; sourceTree = "<group>"; };
 		56AD43FE29D61A18009D5DFD /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		56AD440029D61AB1009D5DFD /* MoodCollection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoodCollection.xib; sourceTree = "<group>"; };
 		56AD440229D61AD4009D5DFD /* MoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodCell.swift; sourceTree = "<group>"; };
 		56AD440429D61AF1009D5DFD /* MoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoodCell.xib; sourceTree = "<group>"; };
 		56AD440629D61B9D009D5DFD /* MyMoodRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodRouter.swift; sourceTree = "<group>"; };
@@ -119,6 +113,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		568BEE7C29E12ACD000518BA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				568C499E29D4F4BB00B7934C /* Home */,
+				568C4DEB29D4FC0600B7934C /* Mood */,
+				568C524129D525CD00B7934C /* MyMoodGraph */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		568C497E29D4F39000B7934C = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +145,7 @@
 			children = (
 				568C522C29D5215400B7934C /* Entities */,
 				568C522929D520EF00B7934C /* Util */,
-				568C4DEB29D4FC0600B7934C /* Mood */,
-				568C524129D525CD00B7934C /* MyMoodGraph */,
-				568C525C29D52FF100B7934C /* MoodCollection */,
-				568C499E29D4F4BB00B7934C /* Home */,
+				568BEE7C29E12ACD000518BA /* Modules */,
 				568C498A29D4F39000B7934C /* AppDelegate.swift */,
 				568C498C29D4F39000B7934C /* SceneDelegate.swift */,
 				568C499329D4F39300B7934C /* Assets.xcassets */,
@@ -157,6 +158,7 @@
 		568C499E29D4F4BB00B7934C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				568C525D29D5300300B7934C /* MoodCell */,
 				568C49A229D4F4BB00B7934C /* Home.storyboard */,
 				568C49A329D4F4BB00B7934C /* HomeViewController.swift */,
 				568C49A529D4F4BB00B7934C /* HomePresenter.swift */,
@@ -230,17 +232,6 @@
 				56AD441129D61C32009D5DFD /* MyMoodGraphRouter.swift */,
 			);
 			path = MyMoodGraph;
-			sourceTree = "<group>";
-		};
-		568C525C29D52FF100B7934C /* MoodCollection */ = {
-			isa = PBXGroup;
-			children = (
-				568C525D29D5300300B7934C /* MoodCell */,
-				56AD440029D61AB1009D5DFD /* MoodCollection.xib */,
-				568C526229D5313300B7934C /* MoodCollectionViewController.swift */,
-				5634E17F29DFE2BB0053E9E4 /* MoodCollectionPresenter.swift */,
-			);
-			path = MoodCollection;
 			sourceTree = "<group>";
 		};
 		568C525D29D5300300B7934C /* MoodCell */ = {
@@ -323,7 +314,6 @@
 				568C499429D4F39300B7934C /* Assets.xcassets in Resources */,
 				568C49A929D4F7D400B7934C /* Home.storyboard in Resources */,
 				56AD440529D61AF1009D5DFD /* MoodCell.xib in Resources */,
-				56AD440129D61AB1009D5DFD /* MoodCollection.xib in Resources */,
 				56AD441329D61C32009D5DFD /* MyMoodGraphView.storyboard in Resources */,
 				56AD441929D61C6C009D5DFD /* MyMood.storyboard in Resources */,
 				56AD441D29D61CB5009D5DFD /* MoodSummaryCell.xib in Resources */,
@@ -350,12 +340,10 @@
 				56AD43FF29D61A18009D5DFD /* Extension.swift in Sources */,
 				568C525B29D52C9600B7934C /* MoodObject.swift in Sources */,
 				568C49AC29D4F7D400B7934C /* HomePresenter.swift in Sources */,
-				568C526329D5313300B7934C /* MoodCollectionViewController.swift in Sources */,
 				56AD442029D61D1C009D5DFD /* MoodGraphCell.swift in Sources */,
 				56AD441529D61C32009D5DFD /* MyMoodGraphManager.swift in Sources */,
 				56AD440C29D61B9D009D5DFD /* MyMoodManager.swift in Sources */,
 				568C49AB29D4F7D400B7934C /* HomeRouter.swift in Sources */,
-				5634E18029DFE2BB0053E9E4 /* MoodCollectionPresenter.swift in Sources */,
 				568C49AD29D4F7D400B7934C /* HomeViewController.swift in Sources */,
 				56AD43FD29D61956009D5DFD /* ChartItem.swift in Sources */,
 				568C49A829D4F7D400B7934C /* HomeManager.swift in Sources */,

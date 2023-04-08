@@ -47,4 +47,9 @@ class Constants {
         static let Worried = "Preocupado"
         
     }
+    
+    struct cellIdentifier {
+        
+        static let MoodCell = "MoodCell"
+    }
 }
