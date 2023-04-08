@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    static func blueColor() -> UIColor {
-        return UIColor.init(red: 50/255, green: 173/255, blue: 230/255, alpha: 1)
+    static func yellowColor() -> UIColor {
+        return UIColor.init(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
     }
 }
 
@@ -85,12 +85,12 @@ extension String {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         if let date = dateFormatter.date(from: self) {
             let hour = Calendar.current.component(.hour, from: date)
-            switch hour {
-            case 0..<6:
+            switch Double(hour) {
+            case 0.0..<5.59:
                 return "Madrugada"
-            case 6..<12:
+            case 6.0..<11.59:
                 return "Manhã"
-            case 12..<18:
+            case 12.0..<17.59:
                 return "Tarde"
             default:
                 return "Noite"
