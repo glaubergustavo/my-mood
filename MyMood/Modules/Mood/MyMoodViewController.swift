@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 @objc class MyMoodViewController: UIViewController,
                                   UITextViewDelegate,
@@ -122,6 +123,15 @@ import UIKit
     
     private func showAnimationVwThanks() {
         
+        var animationViewThanks = LottieAnimationView()
+        animationViewThanks = LottieAnimationView(name: "Congratulations")
+        animationViewThanks.loopMode = .loop
+        animationViewThanks.contentMode = .scaleAspectFill
+        animationViewThanks.frame = CGRect(x: 30, y: 30, width: 200, height: 150)
+        animationViewThanks.animationSpeed = 1.0
+        animationViewThanks.play()
+        vwPopupThanks.addSubview(animationViewThanks)
+        
         if self.centerYConstraint != nil {
             self.view.removeConstraint(self.centerYConstraint!)
         }
@@ -185,6 +195,15 @@ import UIKit
         vwTransportation.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwTransportation.layer.shadowRadius = 4
         
+        var animationViewTransport = LottieAnimationView()
+        animationViewTransport = LottieAnimationView(name: "Transport")
+        animationViewTransport.loopMode = .loop
+        animationViewTransport.contentMode = .scaleAspectFill
+        animationViewTransport.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
+        animationViewTransport.animationSpeed = 1.0
+        animationViewTransport.play()
+        vwTransportation.addSubview(animationViewTransport)
+        
         //View Security
         vwSecurity.tag = 2
         vwSecurity.layer.cornerRadius = 12
@@ -192,6 +211,15 @@ import UIKit
         vwSecurity.layer.shadowOpacity = 1
         vwSecurity.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwSecurity.layer.shadowRadius = 4
+        
+        var animationViewSecurity = LottieAnimationView()
+        animationViewSecurity = LottieAnimationView(name: "Security")
+        animationViewSecurity.loopMode = .loop
+        animationViewSecurity.contentMode = .scaleAspectFill
+        animationViewSecurity.frame = CGRect(x: -5, y: -5, width: 100, height: 100)
+        animationViewSecurity.animationSpeed = 1.0
+        animationViewSecurity.play()
+        vwSecurity.addSubview(animationViewSecurity)
         
         //View Relationship
         vwRelationship.tag = 3
@@ -201,6 +229,15 @@ import UIKit
         vwRelationship.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwRelationship.layer.shadowRadius = 4
         
+        var animationViewRelationship = LottieAnimationView()
+        animationViewRelationship = LottieAnimationView(name: "Relationship")
+        animationViewRelationship.loopMode = .loop
+        animationViewRelationship.contentMode = .scaleAspectFill
+        animationViewRelationship.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
+        animationViewRelationship.animationSpeed = 1.0
+        animationViewRelationship.play()
+        vwRelationship.addSubview(animationViewRelationship)
+        
         //View Finance
         vwFinance.tag = 4
         vwFinance.layer.cornerRadius = 12
@@ -208,6 +245,15 @@ import UIKit
         vwFinance.layer.shadowOpacity = 1
         vwFinance.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwFinance.layer.shadowRadius = 4
+        
+        var animationViewFinance = LottieAnimationView()
+        animationViewFinance = LottieAnimationView(name: "Finance")
+        animationViewFinance.loopMode = .loop
+        animationViewFinance.contentMode = .scaleAspectFill
+        animationViewFinance.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
+        animationViewFinance.animationSpeed = 1.0
+        animationViewFinance.play()
+        vwFinance.addSubview(animationViewFinance)
         
         //View Studies
         vwStudies.tag = 5
@@ -217,6 +263,15 @@ import UIKit
         vwStudies.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwStudies.layer.shadowRadius = 4
         
+        var animationViewStudies = LottieAnimationView()
+        animationViewStudies = LottieAnimationView(name: "Studies")
+        animationViewStudies.loopMode = .loop
+        animationViewStudies.contentMode = .scaleAspectFit
+        animationViewStudies.frame = CGRect(x: 10, y: 5, width: 70, height: 70)
+        animationViewStudies.animationSpeed = 1.0
+        animationViewStudies.play()
+        vwStudies.addSubview(animationViewStudies)
+        
         //View Health
         vwHealth.tag = 6
         vwHealth.layer.cornerRadius = 12
@@ -224,6 +279,15 @@ import UIKit
         vwHealth.layer.shadowOpacity = 1
         vwHealth.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwHealth.layer.shadowRadius = 4
+        
+        var animationViewHealth = LottieAnimationView()
+        animationViewHealth = LottieAnimationView(name: "Health")
+        animationViewHealth.loopMode = .loop
+        animationViewHealth.contentMode = .scaleAspectFill
+        animationViewHealth.frame = CGRect(x: 10, y: 5, width: 75, height: 75)
+        animationViewHealth.animationSpeed = 1.0
+        animationViewHealth.play()
+        vwHealth.addSubview(animationViewHealth)
         
         //View Physique
         vwPhysique.tag = 7
@@ -233,6 +297,15 @@ import UIKit
         vwPhysique.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwPhysique.layer.shadowRadius = 4
         
+        var animationViewPhysique = LottieAnimationView()
+        animationViewPhysique = LottieAnimationView(name: "Physique")
+        animationViewPhysique.loopMode = .loop
+        animationViewPhysique.contentMode = .scaleAspectFill
+        animationViewPhysique.frame = CGRect(x: 0, y: -5, width: 90, height: 90)
+        animationViewPhysique.animationSpeed = 1.0
+        animationViewPhysique.play()
+        vwPhysique.addSubview(animationViewPhysique)
+        
         //View Leisure
         vwLeisure.tag = 8
         vwLeisure.layer.cornerRadius = 12
@@ -241,6 +314,15 @@ import UIKit
         vwLeisure.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwLeisure.layer.shadowRadius = 4
         
+        var animationViewLeisure = LottieAnimationView()
+        animationViewLeisure = LottieAnimationView(name: "Leisure")
+        animationViewLeisure.loopMode = .loop
+        animationViewLeisure.contentMode = .scaleAspectFill
+        animationViewLeisure.frame = CGRect(x: 10, y: -5, width: 80, height: 80)
+        animationViewLeisure.animationSpeed = 1.0
+        animationViewLeisure.play()
+        vwLeisure.addSubview(animationViewLeisure)
+        
         //View Psychological
         vwPsychological.tag = 9
         vwPsychological.layer.cornerRadius = 12
@@ -248,6 +330,15 @@ import UIKit
         vwPsychological.layer.shadowOpacity = 1
         vwPsychological.layer.shadowOffset = CGSize(width: 0, height: 2)
         vwPsychological.layer.shadowRadius = 4
+        
+        var animationViewPsychological = LottieAnimationView()
+        animationViewPsychological = LottieAnimationView(name: "Psychological")
+        animationViewPsychological.loopMode = .loop
+        animationViewPsychological.contentMode = .scaleAspectFill
+        animationViewPsychological.frame = CGRect(x: 10, y: 0, width: 80, height: 80)
+        animationViewPsychological.animationSpeed = 1.0
+        animationViewPsychological.play()
+        vwPsychological.addSubview(animationViewPsychological)
         
         let arrayOfViews = [vwHealth, vwFinance, vwLeisure, vwStudies, vwSecurity, vwPhysique, vwPsychological, vwRelationship, vwTransportation]
         

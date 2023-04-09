@@ -18,6 +18,16 @@
 		568C49AC29D4F7D400B7934C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C49A529D4F4BB00B7934C /* HomePresenter.swift */; };
 		568C49AD29D4F7D400B7934C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C49A329D4F4BB00B7934C /* HomeViewController.swift */; };
 		568C525B29D52C9600B7934C /* MoodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C525A29D52C9600B7934C /* MoodObject.swift */; };
+		5694D6E129E230CE00043596 /* Transport.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6DF29E230CE00043596 /* Transport.json */; };
+		5694D6E929E23D8C00043596 /* Security.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6E729E23D8B00043596 /* Security.json */; };
+		5694D6EC29E2422000043596 /* Relationship.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6EA29E2422000043596 /* Relationship.json */; };
+		5694D6EF29E244A800043596 /* Finance.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6ED29E244A800043596 /* Finance.json */; };
+		5694D6F529E2477B00043596 /* Studies.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6F329E2477B00043596 /* Studies.json */; };
+		5694D6F829E2498800043596 /* Health.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6F629E2498800043596 /* Health.json */; };
+		5694D6FE29E24FFB00043596 /* Physique.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6FC29E24FFB00043596 /* Physique.json */; };
+		5694D70129E2511400043596 /* Leisure.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6FF29E2511400043596 /* Leisure.json */; };
+		5694D70429E2531B00043596 /* Psychological.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D70229E2531B00043596 /* Psychological.json */; };
+		5694D70729E256ED00043596 /* Congratulations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D70529E256ED00043596 /* Congratulations.json */; };
 		56984A9C29DFA46200A40FB9 /* UtilFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56984A9B29DFA46200A40FB9 /* UtilFacade.swift */; };
 		56AD43F729D618EC009D5DFD /* MoodGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43F629D618EC009D5DFD /* MoodGraph.swift */; };
 		56AD43F929D61915009D5DFD /* MoodSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43F829D61915009D5DFD /* MoodSummary.swift */; };
@@ -41,6 +51,7 @@
 		56AD442029D61D1C009D5DFD /* MoodGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD441E29D61D1C009D5DFD /* MoodGraphCell.swift */; };
 		56AD442129D61D1C009D5DFD /* MoodGraphCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AD441F29D61D1C009D5DFD /* MoodGraphCell.xib */; };
 		56AD442329D620BC009D5DFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD442229D620BC009D5DFD /* Constants.swift */; };
+		56B71D2B29E222DF00012AD5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 56B71D2A29E222DF00012AD5 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +80,16 @@
 		568C49A529D4F4BB00B7934C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		568C49A629D4F4BB00B7934C /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		568C525A29D52C9600B7934C /* MoodObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodObject.swift; sourceTree = "<group>"; };
+		5694D6E029E230CE00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Transport.json; sourceTree = "<group>"; };
+		5694D6E829E23D8B00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Security.json; sourceTree = "<group>"; };
+		5694D6EB29E2422000043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Relationship.json; sourceTree = "<group>"; };
+		5694D6EE29E244A800043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Finance.json; sourceTree = "<group>"; };
+		5694D6F429E2477B00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Studies.json; sourceTree = "<group>"; };
+		5694D6F729E2498800043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Health.json; sourceTree = "<group>"; };
+		5694D6FD29E24FFB00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Physique.json; sourceTree = "<group>"; };
+		5694D70029E2511400043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Leisure.json; sourceTree = "<group>"; };
+		5694D70329E2531B00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Psychological.json; sourceTree = "<group>"; };
+		5694D70629E256ED00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Congratulations.json; sourceTree = "<group>"; };
 		56984A9B29DFA46200A40FB9 /* UtilFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFacade.swift; sourceTree = "<group>"; };
 		56AD43F629D618EC009D5DFD /* MoodGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodGraph.swift; sourceTree = "<group>"; };
 		56AD43F829D61915009D5DFD /* MoodSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSummary.swift; sourceTree = "<group>"; };
@@ -100,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5645D40B29DCC6FD00581F1C /* Charts in Frameworks */,
+				56B71D2B29E222DF00012AD5 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +173,16 @@
 				568C499329D4F39300B7934C /* Assets.xcassets */,
 				568C499529D4F39300B7934C /* LaunchScreen.storyboard */,
 				568C499829D4F39300B7934C /* Info.plist */,
+				5694D6DF29E230CE00043596 /* Transport.json */,
+				5694D6E729E23D8B00043596 /* Security.json */,
+				5694D6EA29E2422000043596 /* Relationship.json */,
+				5694D6ED29E244A800043596 /* Finance.json */,
+				5694D6F329E2477B00043596 /* Studies.json */,
+				5694D6F629E2498800043596 /* Health.json */,
+				5694D6FC29E24FFB00043596 /* Physique.json */,
+				5694D6FF29E2511400043596 /* Leisure.json */,
+				5694D70229E2531B00043596 /* Psychological.json */,
+				5694D70529E256ED00043596 /* Congratulations.json */,
 			);
 			path = MyMood;
 			sourceTree = "<group>";
@@ -262,6 +294,7 @@
 			name = MyMood;
 			packageProductDependencies = (
 				5645D40A29DCC6FD00581F1C /* Charts */,
+				56B71D2A29E222DF00012AD5 /* Lottie */,
 			);
 			productName = MyMood;
 			productReference = 568C498729D4F39000B7934C /* MyMood.app */;
@@ -295,6 +328,7 @@
 			mainGroup = 568C497E29D4F39000B7934C;
 			packageReferences = (
 				5645D40929DCC6FD00581F1C /* XCRemoteSwiftPackageReference "Charts" */,
+				56B71D2929E222DF00012AD5 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 568C498829D4F39000B7934C /* Products */;
 			projectDirPath = "";
@@ -310,12 +344,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5694D6EF29E244A800043596 /* Finance.json in Resources */,
 				568C499729D4F39300B7934C /* LaunchScreen.storyboard in Resources */,
 				568C499429D4F39300B7934C /* Assets.xcassets in Resources */,
+				5694D70729E256ED00043596 /* Congratulations.json in Resources */,
+				5694D70429E2531B00043596 /* Psychological.json in Resources */,
 				568C49A929D4F7D400B7934C /* Home.storyboard in Resources */,
+				5694D6E929E23D8C00043596 /* Security.json in Resources */,
 				56AD440529D61AF1009D5DFD /* MoodCell.xib in Resources */,
+				5694D6F529E2477B00043596 /* Studies.json in Resources */,
+				5694D6FE29E24FFB00043596 /* Physique.json in Resources */,
 				56AD441329D61C32009D5DFD /* MyMoodGraphView.storyboard in Resources */,
+				5694D6E129E230CE00043596 /* Transport.json in Resources */,
+				5694D6EC29E2422000043596 /* Relationship.json in Resources */,
 				56AD441929D61C6C009D5DFD /* MyMood.storyboard in Resources */,
+				5694D6F829E2498800043596 /* Health.json in Resources */,
+				5694D70129E2511400043596 /* Leisure.json in Resources */,
 				56AD441D29D61CB5009D5DFD /* MoodSummaryCell.xib in Resources */,
 				56AD442129D61D1C009D5DFD /* MoodGraphCell.xib in Resources */,
 			);
@@ -365,6 +409,86 @@
 				568C499629D4F39300B7934C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5694D6DF29E230CE00043596 /* Transport.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6E029E230CE00043596 /* Base */,
+			);
+			name = Transport.json;
+			sourceTree = "<group>";
+		};
+		5694D6E729E23D8B00043596 /* Security.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6E829E23D8B00043596 /* Base */,
+			);
+			name = Security.json;
+			sourceTree = "<group>";
+		};
+		5694D6EA29E2422000043596 /* Relationship.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6EB29E2422000043596 /* Base */,
+			);
+			name = Relationship.json;
+			sourceTree = "<group>";
+		};
+		5694D6ED29E244A800043596 /* Finance.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6EE29E244A800043596 /* Base */,
+			);
+			name = Finance.json;
+			sourceTree = "<group>";
+		};
+		5694D6F329E2477B00043596 /* Studies.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6F429E2477B00043596 /* Base */,
+			);
+			name = Studies.json;
+			sourceTree = "<group>";
+		};
+		5694D6F629E2498800043596 /* Health.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6F729E2498800043596 /* Base */,
+			);
+			name = Health.json;
+			sourceTree = "<group>";
+		};
+		5694D6FC29E24FFB00043596 /* Physique.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D6FD29E24FFB00043596 /* Base */,
+			);
+			name = Physique.json;
+			sourceTree = "<group>";
+		};
+		5694D6FF29E2511400043596 /* Leisure.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D70029E2511400043596 /* Base */,
+			);
+			name = Leisure.json;
+			sourceTree = "<group>";
+		};
+		5694D70229E2531B00043596 /* Psychological.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D70329E2531B00043596 /* Base */,
+			);
+			name = Psychological.json;
+			sourceTree = "<group>";
+		};
+		5694D70529E256ED00043596 /* Congratulations.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5694D70629E256ED00043596 /* Base */,
+			);
+			name = Congratulations.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -570,6 +694,14 @@
 				minimumVersion = 4.1.0;
 			};
 		};
+		56B71D2929E222DF00012AD5 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -577,6 +709,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5645D40929DCC6FD00581F1C /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		56B71D2A29E222DF00012AD5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56B71D2929E222DF00012AD5 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

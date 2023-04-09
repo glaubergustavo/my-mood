@@ -25,11 +25,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔛 Escolha seu humor 🔛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYD-dn-bsr">
                                 <rect key="frame" x="83.666666666666671" y="89" width="225.66666666666663" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.67450980390000004" green="0.69019607839999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aUs-ow-6VL">
-                                <rect key="frame" x="0.0" y="125" width="393" height="74"/>
+                                <rect key="frame" x="0.0" y="133" width="393" height="74"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="mQP-lQ-j0G"/>
@@ -51,7 +51,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="f7r-To-feu" secondAttribute="trailing" id="1Zy-G5-DUB"/>
                             <constraint firstItem="uYD-dn-bsr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="BMu-YY-88h"/>
-                            <constraint firstItem="aUs-ow-6VL" firstAttribute="top" secondItem="uYD-dn-bsr" secondAttribute="bottom" constant="12" id="GJq-ev-QR6"/>
+                            <constraint firstItem="aUs-ow-6VL" firstAttribute="top" secondItem="uYD-dn-bsr" secondAttribute="bottom" constant="20" id="GJq-ev-QR6"/>
                             <constraint firstItem="f7r-To-feu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KVe-UQ-iC5"/>
                             <constraint firstItem="f7r-To-feu" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="d5Q-e4-dH0"/>
                             <constraint firstItem="uYD-dn-bsr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="j3l-Su-PUk"/>
@@ -74,6 +74,9 @@
         <image name="EMOJIS" width="1010" height="331"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
