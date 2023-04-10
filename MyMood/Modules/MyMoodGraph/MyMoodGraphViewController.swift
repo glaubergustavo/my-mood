@@ -224,7 +224,7 @@ class MyMoodGraphViewController: UIViewController,
         lblPopupMood.text = setTitleMoodGraph(chartItem)
         imgPopupMood.image = setImageMoodGraph(chartItem)
         lblPopupHour.text = chartItem.dateRegister.convertStringToHour()
-        lblPopupDescription.text = "teste mudança"
+        lblPopupDescription.text = "Motivos explicando o porque do seu humor"
     }
     
     private func setTitleMoodGraph(_ chart: ChartItem) -> String? {
