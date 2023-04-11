@@ -422,7 +422,9 @@ import Lottie
                             
                             UIView.animate(withDuration: 0.3, animations: {
                                 view.transform = CGAffineTransform.identity
-                                
+                                view.layer.shadowOpacity = 1
+                                view.layer.shadowOffset = CGSize(width: 0, height: 2)
+                                view.layer.shadowRadius = 4
                             })
                         }else {
                             
@@ -431,7 +433,7 @@ import Lottie
                             UIView.animate(withDuration: 0.3, animations: {
                                 view.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
                                 view.layer.shadowOpacity = 1
-                                view.layer.shadowOffset = CGSize(width: 0, height: 2)
+                                view.layer.shadowOffset = CGSize(width: 0, height: -5)
                                 view.layer.shadowRadius = 4
                             })
                         }

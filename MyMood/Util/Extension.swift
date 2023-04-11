@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Charts
 
 extension UIColor {
     static func yellowColor() -> UIColor {
@@ -30,6 +31,21 @@ extension UIView {
     func roundCorners(_ corners: CACornerMask, radius: CGFloat) {
         self.layer.cornerRadius = radius
         self.layer.maskedCorners = corners
+    }
+}
+
+extension Double {
+    func getPeriodFromHour() -> String {
+        switch self {
+        case 0..<6:
+            return "Madrugada"
+        case 6..<12:
+            return "Manhã"
+        case 12..<18:
+            return "Tarde"
+        default:
+            return "Noite"
+        }
     }
 }
 
@@ -75,9 +91,18 @@ extension String {
             let hourFormatter = DateFormatter()
             hourFormatter.dateFormat = "HH"
             let formattedHour = hourFormatter.string(from: date)
-            return formattedHour
+            switch formattedHour {
+            case "00"..<"06":
+                return "Madrugada"
+            case "06"..<"12":
+                return "Manhã"
+            case "12"..<"18":
+                return "Tarde"
+            default:
+                return "Noite"
+            }
         }
-        return "0"
+        return ""
     }
     
     func convertStringToPeriod() -> String? {
@@ -86,17 +111,17 @@ extension String {
         if let date = dateFormatter.date(from: self) {
             let hour = Calendar.current.component(.hour, from: date)
             switch Double(hour) {
-            case 0.0..<5.59:
+            case 0.0..<6.0:
                 return "Madrugada"
-            case 6.0..<11.59:
+            case 6.0..<12.0:
                 return "Manhã"
-            case 12.0..<17.59:
+            case 12.0..<18.0:
                 return "Tarde"
             default:
                 return "Noite"
             }
         }
-        return nil
+        return ""
     }
 
     func convertStringToDate(_ dateString: String) -> String? {

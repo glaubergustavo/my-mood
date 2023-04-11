@@ -42,26 +42,26 @@ class MyMoodGraphPresenter: NSObject {
         let charts1: [ChartItem] = [
             ChartItem(codHumor: 1, id: 1, justify: "Teste", dateRegister: "2023-03-01 08:40:00"),
             ChartItem(codHumor: 4, id: 4, justify: "Teste", dateRegister: "2023-03-02 16:40:00"),
-            ChartItem(codHumor: 7, id: 7, justify: "Teste", dateRegister: "2023-03-05 10:40:00"),
-            ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-03-09 11:40:00"),
-            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-03-15 20:40:00"),
-            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-03-16 13:40:00"),
-            ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-03-22 14:40:0"),
-            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-03-28 22:40:00"),
-            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-03-30 01:40:00")
+            ChartItem(codHumor: 7, id: 7, justify: "Teste", dateRegister: "2023-03-03 10:40:00"),
+            ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-03-04 11:40:00"),
+            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-03-05 20:40:00"),
+            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-03-06 13:40:00"),
+            ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-03-07 14:40:0"),
+            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-03-08 22:40:00"),
+            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-03-09 01:40:00")
             ]
         let data1 = MoodGraph(date: "Março/2023", chart: charts1)
         
         let charts2: [ChartItem] = [
-            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-04-01 08:40:00"),
+            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-04-01 16:40:00"),
             ChartItem(codHumor: 4, id: 4, justify: "Teste", dateRegister: "2023-04-02 09:40:00"),
-            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-04-03 10:40:00"),
-            ChartItem(codHumor: 10, id: 10, justify: "Teste", dateRegister: "2023-04-04 11:40:00"),
-            ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-04-05 12:40:00"),
-            ChartItem(codHumor: 7, id: 7, justify: "Teste", dateRegister: "2023-04-06 13:40:00"),
+            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-04-03 12:40:00"),
+            ChartItem(codHumor: 10, id: 10, justify: "Teste", dateRegister: "2023-04-04 20:40:00"),
+            ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-04-05 06:40:00"),
+            ChartItem(codHumor: 7, id: 7, justify: "Teste", dateRegister: "2023-04-06 10:40:00"),
             ChartItem(codHumor: 6, id: 6, justify: "Teste", dateRegister: "2023-04-07 14:40:00"),
-            ChartItem(codHumor: 1, id: 1, justify: "Teste", dateRegister: "2023-04-08 15:40:00"),
-            ChartItem(codHumor: 4, id: 4, justify: "Teste", dateRegister: "2023-04-09 16:40:00")
+            ChartItem(codHumor: 1, id: 1, justify: "Teste", dateRegister: "2023-04-08 03:40:00"),
+            ChartItem(codHumor: 4, id: 4, justify: "Teste", dateRegister: "2023-04-09 22:40:00")
         ]
         
         let data2 = MoodGraph(date: "Abril/2023", chart: charts2)
@@ -69,13 +69,13 @@ class MyMoodGraphPresenter: NSObject {
         let charts3: [ChartItem] = [
             ChartItem(codHumor: 2, id: 2, justify: "Teste", dateRegister: "2023-05-01 02:40:00"),
             ChartItem(codHumor: 7, id: 7, justify: "Teste", dateRegister: "2023-05-02 09:40:00"),
-            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-05-08 10:40:00"),
-            ChartItem(codHumor: 4, id: 4, justify: "Teste", dateRegister: "2023-05-09 01:40:00"),
-            ChartItem(codHumor: 1, id: 1, justify: "Teste", dateRegister: "2023-05-15 12:40:00"),
-            ChartItem(codHumor: 6, id: 6, justify: "Teste", dateRegister: "2023-05-19 23:40:00"),
-            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-05-23 19:40:00"),
-            ChartItem(codHumor: 9, id: 9, justify: "Teste", dateRegister: "2023-05-28 05:40:00"),
-            ChartItem(codHumor: 3, id: 3, justify: "Teste", dateRegister: "2023-05-30 16:40:00")
+            ChartItem(codHumor: 5, id: 5, justify: "Teste", dateRegister: "2023-05-03 10:40:00"),
+            ChartItem(codHumor: 4, id: 4, justify: "Teste", dateRegister: "2023-05-04 01:40:00"),
+            ChartItem(codHumor: 1, id: 1, justify: "Teste", dateRegister: "2023-05-05 12:40:00"),
+            ChartItem(codHumor: 6, id: 6, justify: "Teste", dateRegister: "2023-05-06 23:40:00"),
+            ChartItem(codHumor: 8, id: 8, justify: "Teste", dateRegister: "2023-05-07 19:40:00"),
+            ChartItem(codHumor: 9, id: 9, justify: "Teste", dateRegister: "2023-05-08 05:40:00"),
+            ChartItem(codHumor: 3, id: 3, justify: "Teste", dateRegister: "2023-05-09 16:40:00")
         ]
         
         let data3 = MoodGraph(date: "Maio/2023", chart: charts3)

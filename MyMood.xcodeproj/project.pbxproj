@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5645D40B29DCC6FD00581F1C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 5645D40A29DCC6FD00581F1C /* Charts */; };
+		566CC31E29E4CD6700159BD9 /* xAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566CC31D29E4CD6700159BD9 /* xAxisValueFormatter.swift */; };
 		568C498B29D4F39000B7934C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C498A29D4F39000B7934C /* AppDelegate.swift */; };
 		568C498D29D4F39000B7934C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C498C29D4F39000B7934C /* SceneDelegate.swift */; };
 		568C499429D4F39300B7934C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568C499329D4F39300B7934C /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		566CC31D29E4CD6700159BD9 /* xAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xAxisValueFormatter.swift; sourceTree = "<group>"; };
 		568C498729D4F39000B7934C /* MyMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568C498A29D4F39000B7934C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568C498C29D4F39000B7934C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				56AD43FE29D61A18009D5DFD /* Extension.swift */,
 				56AD442229D620BC009D5DFD /* Constants.swift */,
 				56984A9B29DFA46200A40FB9 /* UtilFacade.swift */,
+				566CC31D29E4CD6700159BD9 /* xAxisValueFormatter.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				56AD43FF29D61A18009D5DFD /* Extension.swift in Sources */,
 				568C525B29D52C9600B7934C /* MoodObject.swift in Sources */,
 				568C49AC29D4F7D400B7934C /* HomePresenter.swift in Sources */,
+				566CC31E29E4CD6700159BD9 /* xAxisValueFormatter.swift in Sources */,
 				56AD442029D61D1C009D5DFD /* MoodGraphCell.swift in Sources */,
 				56AD441529D61C32009D5DFD /* MyMoodGraphManager.swift in Sources */,
 				56AD440C29D61B9D009D5DFD /* MyMoodManager.swift in Sources */,
