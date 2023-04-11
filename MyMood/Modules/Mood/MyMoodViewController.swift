@@ -91,13 +91,9 @@ import Lottie
     private func configUI() {
         
         hideAnimationVwThanks()
-        
         configNavBar()
-        
         configLabels()
-        
         configTextView()
-        
         configMotifsViews()
     }
     
@@ -142,6 +138,7 @@ import Lottie
 
             self.view.addConstraint(self.centerYConstraint!)
             
+            self.navigationController?.navigationBar.alpha = 0
             self.vwPopupThanks.alpha = 1
             self.vwBackground.alpha = 0.7
             
@@ -171,6 +168,7 @@ import Lottie
     
     private func configNavBar() {
         
+        self.navigationController?.navigationBar.alpha = 1
         self.navigationItem.title = Constants.Messages.MyMood
         self.navigationController?.navigationBar.titleTextAttributes =
         [NSAttributedString.Key.foregroundColor: UIColor.yellowColor()]

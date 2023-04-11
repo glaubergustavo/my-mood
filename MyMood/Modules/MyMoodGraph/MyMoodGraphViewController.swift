@@ -72,7 +72,6 @@ class MyMoodGraphViewController: UIViewController,
     
     private func configUI() {
         
-        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -50, right: 0)
         configNavBar()
         configSummaryView()
         configMoodLineView()
@@ -85,6 +84,7 @@ class MyMoodGraphViewController: UIViewController,
     
     private func configNavBar() {
         
+        self.navigationController?.navigationBar.alpha = 1
         self.navigationItem.title = Constants.Messages.MyMood
         self.navigationController?.navigationBar.titleTextAttributes =
         [NSAttributedString.Key.foregroundColor: UIColor.yellowColor()]
@@ -185,10 +185,13 @@ class MyMoodGraphViewController: UIViewController,
         
         view.addConstraint(centerYConstraint!)
         
-        vwBackground.alpha = 0
-        vwPopupGraph.alpha = 0
-        
-        view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3) {
+            self.navigationController?.navigationBar.alpha = 1
+            self.vwBackground.alpha = 0
+            self.vwPopupGraph.alpha = 0
+            
+            self.view.layoutIfNeeded()
+        }
     }
     
     internal func showAnimationPopupGraph(_ chartItem: ChartItem) {
@@ -211,6 +214,7 @@ class MyMoodGraphViewController: UIViewController,
             
             self.view.addConstraint(self.centerYConstraint!)
             
+            self.navigationController?.navigationBar.alpha = 0
             self.vwPopupGraph.alpha = 1
             self.vwBackground.alpha = 0.7
             
@@ -332,6 +336,9 @@ class MyMoodGraphViewController: UIViewController,
     }
     
     @objc func dismissView() {
+        UIView.animate(withDuration: 0.3) {
+            self.navigationController?.navigationBar.alpha = 1
+        }
         self.navigationController?.popToRootViewController(animated: true)
     }
     
