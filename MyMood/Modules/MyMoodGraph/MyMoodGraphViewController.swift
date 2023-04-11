@@ -336,9 +336,6 @@ class MyMoodGraphViewController: UIViewController,
     }
     
     @objc func dismissView() {
-        UIView.animate(withDuration: 0.3) {
-            self.navigationController?.navigationBar.alpha = 1
-        }
         self.navigationController?.popToRootViewController(animated: true)
     }
     
