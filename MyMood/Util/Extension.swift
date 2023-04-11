@@ -34,21 +34,6 @@ extension UIView {
     }
 }
 
-extension Double {
-    func getPeriodFromHour() -> String {
-        switch self {
-        case 0..<6:
-            return "Madrugada"
-        case 6..<12:
-            return "Manhã"
-        case 12..<18:
-            return "Tarde"
-        default:
-            return "Noite"
-        }
-    }
-}
-
 extension String {
     func convertStringToDay() -> Double? {
         let dateFormatter = DateFormatter()
@@ -70,7 +55,6 @@ extension String {
            }
            return nil
        }
-   
     
     func convertStringToHour() -> String? {
         let dateFormatter = DateFormatter()
@@ -84,27 +68,6 @@ extension String {
         return nil
     }
     
-    func convertStringToHourMood() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        if let date = dateFormatter.date(from: self) {
-            let hourFormatter = DateFormatter()
-            hourFormatter.dateFormat = "HH"
-            let formattedHour = hourFormatter.string(from: date)
-            switch formattedHour {
-            case "00"..<"06":
-                return "Madrugada"
-            case "06"..<"12":
-                return "Manhã"
-            case "12"..<"18":
-                return "Tarde"
-            default:
-                return "Noite"
-            }
-        }
-        return ""
-    }
-    
     func convertStringToPeriod() -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -112,16 +75,16 @@ extension String {
             let hour = Calendar.current.component(.hour, from: date)
             switch Double(hour) {
             case 0.0..<6.0:
-                return "Madrugada"
+                return Constants.Messages.Dawn
             case 6.0..<12.0:
-                return "Manhã"
+                return Constants.Messages.Morning
             case 12.0..<18.0:
-                return "Tarde"
+                return Constants.Messages.Afternoon
             default:
-                return "Noite"
+                return Constants.Messages.Night
             }
         }
-        return ""
+        return Constants.Messages.Empty
     }
 
     func convertStringToDate(_ dateString: String) -> String? {

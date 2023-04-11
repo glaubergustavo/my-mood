@@ -38,18 +38,18 @@ class HomePresenter {
         
         if moodSelected == 0 {
             moods = [
-                Mood(moodImg: "ic_apaixonado", moodName: Constants.Messages.Lovesick, moodCod: 1),
-                Mood(moodImg: "ic_sono", moodName: Constants.Messages.Sleepy, moodCod: 2),
-                Mood(moodImg: "ic_engracado", moodName: Constants.Messages.Funny, moodCod: 3),
-                Mood(moodImg: "ic_feliz", moodName: Constants.Messages.Happy, moodCod: 4),
-                Mood(moodImg: "ic_espantado", moodName: Constants.Messages.Amazed, moodCod: 5),
-                Mood(moodImg: "ic_entediado", moodName: Constants.Messages.Tired, moodCod: 6),
-                Mood(moodImg: "ic_triste", moodName: Constants.Messages.Sad, moodCod: 7),
-                Mood(moodImg: "ic_raiva", moodName: Constants.Messages.Angry, moodCod: 8),
-                Mood(moodImg: "ic_frustrado", moodName: Constants.Messages.Frustrated, moodCod: 9),
-                Mood(moodImg: "ic_fome", moodName: Constants.Messages.Hungry, moodCod:10),
-                Mood(moodImg: "ic_doente", moodName: Constants.Messages.Sick, moodCod: 12),
-                Mood(moodImg: "ic_preocupado", moodName: Constants.Messages.Worried, moodCod: 13)
+                Mood(moodImg: Constants.Images.LovesickImage, moodName: Constants.Messages.Lovesick, moodCod: 1),
+                Mood(moodImg: Constants.Images.SleepyImage, moodName: Constants.Messages.Sleepy, moodCod: 2),
+                Mood(moodImg: Constants.Images.FunnyImage, moodName: Constants.Messages.Funny, moodCod: 3),
+                Mood(moodImg: Constants.Images.HappyImage, moodName: Constants.Messages.Happy, moodCod: 4),
+                Mood(moodImg: Constants.Images.AmazedImage, moodName: Constants.Messages.Amazed, moodCod: 5),
+                Mood(moodImg: Constants.Images.TiredImage, moodName: Constants.Messages.Tired, moodCod: 6),
+                Mood(moodImg: Constants.Images.SadImage, moodName: Constants.Messages.Sad, moodCod: 7),
+                Mood(moodImg: Constants.Images.AngryImage, moodName: Constants.Messages.Angry, moodCod: 8),
+                Mood(moodImg: Constants.Images.FrustratedImage, moodName: Constants.Messages.Frustrated, moodCod: 9),
+                Mood(moodImg: Constants.Images.HungryImage, moodName: Constants.Messages.Hungry, moodCod:10),
+                Mood(moodImg: Constants.Images.SickImage, moodName: Constants.Messages.Sick, moodCod: 11),
+                Mood(moodImg: Constants.Images.WorriedImage, moodName: Constants.Messages.Worried, moodCod: 12)
             ]
         }
         

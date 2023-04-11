@@ -12,10 +12,10 @@ import Charts
 
 protocol MoodChartCellDelegate {
     func showAnimationPopupGraph(_ chartItem: ChartItem)
+    func setImageMoodGraph(_ chart: ChartItem) -> UIImage?
 }
 class MoodGraphCell: UITableViewCell,
-                     ChartViewDelegate,
-                     AxisValueFormatter {
+                     ChartViewDelegate {
     
     @IBOutlet weak var vwMoodGraph: LineChartView!
     
@@ -40,24 +40,24 @@ class MoodGraphCell: UITableViewCell,
         // Configurando os dados
         var dataEntries: [ChartDataEntry] = []
         let periodIndex: [String: Int] = [
-            "Madrugada": 0,
-            "Manhã": 1,
-            "Tarde": 2,
-            "Noite": 3
+            Constants.Messages.Dawn : 0,
+            Constants.Messages.Morning : 1,
+            Constants.Messages.Afternoon : 2,
+            Constants.Messages.Night : 3
         ]
         self.date.removeAll()
         
         for i in 0..<mood.count {
             let date = mood[i].dateRegister.convertStringToDay() ?? .zero
-            let period = mood[i].dateRegister.convertStringToPeriod() ?? ""
-            let icon = self.setImageMoodGraph(mood[i])
+            let period = mood[i].dateRegister.convertStringToPeriod() ?? Constants.Messages.Empty
+            let icon = delegate.setImageMoodGraph(mood[i])
             self.date.append(date)
             let entry = ChartDataEntry(x: date, y: Double(periodIndex[period]!), icon: icon)
             dataEntries.append(entry)
             print(entry)
         }
         
-        let dataSet = LineChartDataSet(entries: dataEntries, label: "Emoções")
+        let dataSet = LineChartDataSet(entries: dataEntries)
         dataSet.colors = [.gray]
         dataSet.circleColors = [.gray]
         dataSet.circleRadius = 3
@@ -99,16 +99,20 @@ class MoodGraphCell: UITableViewCell,
         vwMoodGraph.xAxis.labelCount = date.count
         print(formattedDates)
         
-        let yAxisValues = ["Madrugada", "Manhã", "Tarde", "Noite"]
+        let timesOfDay = [
+            Constants.Messages.Dawn,
+            Constants.Messages.Morning,
+            Constants.Messages.Afternoon,
+            Constants.Messages.Night
+        ]
         vwMoodGraph.leftAxis.drawLabelsEnabled = true
         vwMoodGraph.leftAxis.forceLabelsEnabled = true
         vwMoodGraph.leftAxis.labelPosition = .outsideChart
         vwMoodGraph.leftAxis.labelFont = UIFont.systemFont(ofSize: 12.0)
         vwMoodGraph.leftAxis.labelTextColor = .black
         vwMoodGraph.leftAxis.labelXOffset = -10
-        vwMoodGraph.leftAxis.valueFormatter = self
-        vwMoodGraph.leftAxis.valueFormatter = IndexAxisValueFormatter(values: yAxisValues)
-        vwMoodGraph.leftAxis.labelCount = yAxisValues.count
+        vwMoodGraph.leftAxis.valueFormatter = IndexAxisValueFormatter(values: timesOfDay)
+        vwMoodGraph.leftAxis.labelCount = timesOfDay.count
         vwMoodGraph.leftAxis.axisMinimum = 0
         vwMoodGraph.leftAxis.axisMaximum = 4
         
@@ -118,46 +122,11 @@ class MoodGraphCell: UITableViewCell,
         vwMoodGraph.notifyDataSetChanged()
     }
     
-    func stringForValue(_ value: Double, axis: Charts.AxisBase?) -> String {
-        return ""
-    }
-    
-    
-    func formatDateArray(chartList: [ChartItem]) {
+    private func formatDateArray(chartList: [ChartItem]) {
         formattedDates.removeAll()
         chartList.forEach { chart in
-            formattedDates.append(chart.dateRegister.convertStringToDayAndMonth() ?? "")
+            formattedDates.append(chart.dateRegister.convertStringToDayAndMonth() ?? Constants.Messages.Empty)
         }
-    }
-    
-    private func setImageMoodGraph(_ chart: ChartItem) -> UIImage? {
-        
-        switch chart.codHumor {
-            case 1:
-                return UIImage(named: "ic_apaixonado")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 4:
-                return UIImage(named: "ic_feliz")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 7:
-                return UIImage(named: "ic_triste")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 5:
-                return UIImage(named: "ic_espantado")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 8:
-                return UIImage(named: "ic_raiva")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 6:
-                return UIImage(named: "ic_entediado")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 3:
-                return UIImage(named: "ic_engracado")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 10:
-                return UIImage(named: "ic_doente")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 9:
-                return UIImage(named: "ic_frustrado")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            case 2:
-                return UIImage(named: "ic_sono")?.resized(to: CGSize(width: 30, height: 30)) ?? UIImage()
-            default:
-                break
-        }
-        
-        return nil
     }
     
     //-----------------------------------------------------------------------

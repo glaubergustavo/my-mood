@@ -84,13 +84,11 @@ import Lottie
     //-----------------------------------------------------------------------
     private func loadUI() {
         
-        imgMood.image = UIImage(named: presenter.mood?.moodImg ?? "ic_triste")
+        imgMood.image = UIImage(named: presenter.mood?.moodImg ?? Constants.Images.SadImage)
         lblMood.text = presenter.mood?.moodName ?? Constants.Messages.Sad
     }
     
     private func configUI() {
-        
-        configAnimationsMotifs()
         
         hideAnimationVwThanks()
         
@@ -126,21 +124,7 @@ import Lottie
     
     private func showAnimationVwThanks() {
         
-        var animationViewThanks = LottieAnimationView()
-        animationViewThanks = LottieAnimationView(name: "Congratulations")
-        animationViewThanks.loopMode = .loop
-        animationViewThanks.contentMode = .scaleAspectFill
-        animationViewThanks.animationSpeed = 1.0
-        animationViewThanks.play()
-        vwPopupThanks.addSubview(animationViewThanks)
-        
-        animationViewThanks.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            animationViewThanks.topAnchor.constraint(equalTo: vwPopupThanks.topAnchor, constant: 30),
-            animationViewThanks.leadingAnchor.constraint(equalTo: vwPopupThanks.leadingAnchor, constant: 30),
-            animationViewThanks.trailingAnchor.constraint(equalTo: vwPopupThanks.trailingAnchor, constant: -30),
-            animationViewThanks.bottomAnchor.constraint(equalTo: btnSeeMoodData.topAnchor, constant: -10)
-            ])
+        configAnimationPopupThanks()
         
         if self.centerYConstraint != nil {
             self.view.removeConstraint(self.centerYConstraint!)
@@ -166,6 +150,25 @@ import Lottie
         }
     }
     
+    private func configAnimationPopupThanks() {
+        
+        var animationViewThanks = LottieAnimationView()
+        animationViewThanks = LottieAnimationView(name: Constants.Animations.CongratulationsAnimation)
+        animationViewThanks.loopMode = .loop
+        animationViewThanks.contentMode = .scaleAspectFill
+        animationViewThanks.animationSpeed = 1.0
+        animationViewThanks.play()
+        vwPopupThanks.addSubview(animationViewThanks)
+        
+        animationViewThanks.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            animationViewThanks.topAnchor.constraint(equalTo: vwPopupThanks.topAnchor, constant: 30),
+            animationViewThanks.leadingAnchor.constraint(equalTo: vwPopupThanks.leadingAnchor, constant: 30),
+            animationViewThanks.trailingAnchor.constraint(equalTo: vwPopupThanks.trailingAnchor, constant: -30),
+            animationViewThanks.bottomAnchor.constraint(equalTo: btnSeeMoodData.topAnchor, constant: -10)
+            ])
+    }
+    
     private func configNavBar() {
         
         self.navigationItem.title = Constants.Messages.MyMood
@@ -174,7 +177,7 @@ import Lottie
         
         let backBtn = UIButton()
         backBtn.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        backBtn.setImage(UIImage(named: "left207"), for: .normal)
+        backBtn.setImage(UIImage(named: Constants.Images.LeftButton), for: .normal)
         backBtn.imageView?.image = backBtn.imageView?.image?.withTintColor(UIColor.yellowColor())
         backBtn.addTarget(self, action: #selector(self.dismissView), for: .touchUpInside)
         backBtn.widthAnchor.constraint(equalToConstant: 25).isActive = true
@@ -208,8 +211,7 @@ import Lottie
         //View Security
         self.vwSecurity.tag = 2
         self.vwSecurity.layer.cornerRadius = 12
-        self.vwSecurity.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0,
-        alpha: 0.25).cgColor
+        self.vwSecurity.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwSecurity.layer.shadowOpacity = 1
         self.vwSecurity.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwSecurity.layer.shadowRadius = 4
@@ -217,8 +219,7 @@ import Lottie
         //View Relationship
         self.vwRelationship.tag = 3
         self.vwRelationship.layer.cornerRadius = 12
-        self.vwRelationship.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0,
-        alpha: 0.25).cgColor
+        self.vwRelationship.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwRelationship.layer.shadowOpacity = 1
         self.vwRelationship.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwRelationship.layer.shadowRadius = 4
@@ -226,8 +227,7 @@ import Lottie
         //View Finance
         self.vwFinance.tag = 4
         self.vwFinance.layer.cornerRadius = 12
-        self.vwFinance.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha:
-        0.25).cgColor
+        self.vwFinance.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwFinance.layer.shadowOpacity = 1
         self.vwFinance.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwFinance.layer.shadowRadius = 4
@@ -243,8 +243,7 @@ import Lottie
         //View Health
         self.vwHealth.tag = 6
         self.vwHealth.layer.cornerRadius = 12
-        self.vwHealth.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha:
-        0.25).cgColor
+        self.vwHealth.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwHealth.layer.shadowOpacity = 1
         self.vwHealth.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwHealth.layer.shadowRadius = 4
@@ -252,8 +251,7 @@ import Lottie
         //View Physique
         self.vwPhysique.tag = 7
         self.vwPhysique.layer.cornerRadius = 12
-        self.vwPhysique.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0,
-        alpha: 0.25).cgColor
+        self.vwPhysique.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwPhysique.layer.shadowOpacity = 1
         self.vwPhysique.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwPhysique.layer.shadowRadius = 4
@@ -261,8 +259,7 @@ import Lottie
         //View Leisure
         self.vwLeisure.tag = 8
         self.vwLeisure.layer.cornerRadius = 12
-        self.vwLeisure.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha:
-        0.25).cgColor
+        self.vwLeisure.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwLeisure.layer.shadowOpacity = 1
         self.vwLeisure.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwLeisure.layer.shadowRadius = 4
@@ -270,16 +267,21 @@ import Lottie
         //View Psychological
         self.vwPsychological.tag = 9
         self.vwPsychological.layer.cornerRadius = 12
-        self.vwPsychological.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0,
-        alpha: 0.25).cgColor
+        self.vwPsychological.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.vwPsychological.layer.shadowOpacity = 1
         self.vwPsychological.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.vwPsychological.layer.shadowRadius = 4
         
+        configAnimationsMotifs()
+        configCheckboxImage()
+    }
+    
+    private func configCheckboxImage() {
+        
         let arrayOfViews = [vwHealth, vwFinance, vwLeisure, vwStudies, vwSecurity, vwPhysique, vwPsychological, vwRelationship, vwTransportation]
         
         for view in arrayOfViews {
-            self.checkboxImage = UIImageView(image: UIImage(named: "icon_check_green"))
+            self.checkboxImage = UIImageView(image: UIImage(named: Constants.Images.iconCheckGreen))
             self.checkboxImage.frame = CGRect(x: 74, y: 6, width: 12, height: 12)
             self.checkboxImage.isHidden = true
             self.checkboxImage.tag = 1
@@ -292,12 +294,12 @@ import Lottie
     
     private func configAnimationsMotifs() {
         
-        showLoading(true
-        )
+        showLoading(true)
+        
         DispatchQueue.main.async {
             
             var animationViewTransport = LottieAnimationView()
-            animationViewTransport = LottieAnimationView(name: "Transport")
+            animationViewTransport = LottieAnimationView(name: Constants.Animations.TransportationAnimation)
             animationViewTransport.loopMode = .loop
             animationViewTransport.contentMode = .scaleAspectFill
             animationViewTransport.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
@@ -306,7 +308,7 @@ import Lottie
             self.vwTransportation.addSubview(animationViewTransport)
             
             var animationViewSecurity = LottieAnimationView()
-            animationViewSecurity = LottieAnimationView(name: "Security")
+            animationViewSecurity = LottieAnimationView(name: Constants.Animations.SecurityAnimation)
             animationViewSecurity.loopMode = .loop
             animationViewSecurity.contentMode = .scaleAspectFill
             animationViewSecurity.frame = CGRect(x: -5, y: -5, width: 100, height: 100)
@@ -315,7 +317,7 @@ import Lottie
             self.vwSecurity.addSubview(animationViewSecurity)
             
             var animationViewRelationship = LottieAnimationView()
-            animationViewRelationship = LottieAnimationView(name: "Relationship")
+            animationViewRelationship = LottieAnimationView(name: Constants.Animations.RelationshipAnimation)
             animationViewRelationship.loopMode = .loop
             animationViewRelationship.contentMode = .scaleAspectFill
             animationViewRelationship.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
@@ -324,7 +326,7 @@ import Lottie
             self.vwRelationship.addSubview(animationViewRelationship)
             
             var animationViewFinance = LottieAnimationView()
-            animationViewFinance = LottieAnimationView(name: "Finance")
+            animationViewFinance = LottieAnimationView(name: Constants.Animations.FinanceAnimation)
             animationViewFinance.loopMode = .loop
             animationViewFinance.contentMode = .scaleAspectFill
             animationViewFinance.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
@@ -334,7 +336,7 @@ import Lottie
             
             
             var animationViewStudies = LottieAnimationView()
-            animationViewStudies = LottieAnimationView(name: "Studies")
+            animationViewStudies = LottieAnimationView(name: Constants.Animations.StudiesAnimation)
             animationViewStudies.loopMode = .loop
             animationViewStudies.contentMode = .scaleAspectFit
             animationViewStudies.frame = CGRect(x: 10, y: 5, width: 70, height: 70)
@@ -343,7 +345,7 @@ import Lottie
             self.vwStudies.addSubview(animationViewStudies)
             
             var animationViewHealth = LottieAnimationView()
-            animationViewHealth = LottieAnimationView(name: "Health")
+            animationViewHealth = LottieAnimationView(name: Constants.Animations.HealthAnimation)
             animationViewHealth.loopMode = .loop
             animationViewHealth.contentMode = .scaleAspectFill
             animationViewHealth.frame = CGRect(x: 10, y: 5, width: 75, height: 75)
@@ -352,7 +354,7 @@ import Lottie
             self.vwHealth.addSubview(animationViewHealth)
             
             var animationViewPhysique = LottieAnimationView()
-            animationViewPhysique = LottieAnimationView(name: "Physique")
+            animationViewPhysique = LottieAnimationView(name: Constants.Animations.PhysiqueAnimation)
             animationViewPhysique.loopMode = .loop
             animationViewPhysique.contentMode = .scaleAspectFill
             animationViewPhysique.frame = CGRect(x: 0, y: -5, width: 90, height: 90)
@@ -361,7 +363,7 @@ import Lottie
             self.vwPhysique.addSubview(animationViewPhysique)
             
             var animationViewLeisure = LottieAnimationView()
-            animationViewLeisure = LottieAnimationView(name: "Leisure")
+            animationViewLeisure = LottieAnimationView(name: Constants.Animations.LeisureAnimation)
             animationViewLeisure.loopMode = .loop
             animationViewLeisure.contentMode = .scaleAspectFill
             animationViewLeisure.frame = CGRect(x: 10, y: -5, width: 80, height: 80)
@@ -370,7 +372,7 @@ import Lottie
             self.vwLeisure.addSubview(animationViewLeisure)
             
             var animationViewPsychological = LottieAnimationView()
-            animationViewPsychological = LottieAnimationView(name: "Psychological")
+            animationViewPsychological = LottieAnimationView(name: Constants.Animations.PsychologicalAnimation)
             animationViewPsychological.loopMode = .loop
             animationViewPsychological.contentMode = .scaleAspectFill
             animationViewPsychological.frame = CGRect(x: 10, y: 0, width: 80, height: 80)
@@ -407,39 +409,46 @@ import Lottie
     }
     
     @objc func viewTapped(sender: UITapGestureRecognizer) {
-        if let view = sender.view {
-            self.configSelectedMotifs(view: view)
-            for subview in view.subviews {
-                if let imageView = subview as? UIImageView {
-                    if imageView.tag == 1 {
-                        imageView.isHidden = !imageView.isHidden
-                        
-                        if imageView.isHidden {
-                            
-                            if let index = selectedMotives.firstIndex(of: view.tag) {
-                                selectedMotives.remove(at: index)
-                            }
-                            
-                            UIView.animate(withDuration: 0.3, animations: {
-                                view.transform = CGAffineTransform.identity
-                                view.layer.shadowOpacity = 1
-                                view.layer.shadowOffset = CGSize(width: 0, height: 2)
-                                view.layer.shadowRadius = 4
-                            })
-                        }else {
-                            
-                            self.selectedMotives.append(view.tag)
-                            
-                            UIView.animate(withDuration: 0.3, animations: {
-                                view.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                                view.layer.shadowOpacity = 1
-                                view.layer.shadowOffset = CGSize(width: 0, height: -5)
-                                view.layer.shadowRadius = 4
-                            })
-                        }
-                    }
-                }
+        guard let view = sender.view else { return }
+        
+        self.configSelectedMotifs(view: view)
+        
+        for subview in view.subviews {
+            
+            if let imageView = subview as? UIImageView,
+               imageView.tag == 1 {
+                
+                self.configAnimationsMotifs(view: view, imageView: imageView)
             }
+        }
+    }
+    
+    private func configAnimationsMotifs(view: UIView, imageView: UIImageView) {
+        
+        imageView.isHidden = !imageView.isHidden
+        
+        if imageView.isHidden {
+            
+            if let index = selectedMotives.firstIndex(of: view.tag) {
+                selectedMotives.remove(at: index)
+            }
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                view.transform = CGAffineTransform.identity
+                view.layer.shadowOpacity = 1
+                view.layer.shadowOffset = CGSize(width: 0, height: 2)
+                view.layer.shadowRadius = 4
+            })
+        }else {
+            
+            self.selectedMotives.append(view.tag)
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                view.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                view.layer.shadowOpacity = 1
+                view.layer.shadowOffset = CGSize(width: 0, height: -5)
+                view.layer.shadowRadius = 4
+            })
         }
     }
     
@@ -502,7 +511,7 @@ import Lottie
     
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.text == Constants.Messages.TellMore {
-            self.textViewComments.text = ""
+            self.textViewComments.text = Constants.Messages.Empty
         }
     }
     
@@ -515,7 +524,7 @@ import Lottie
             }
         
             let availables = 160 - total
-        self.lblTextCount.text = String(format: "%@ %i %@.", Constants.Messages.Available, availables, Constants.Messages.Characters)
+        self.lblTextCount.text = String(format: Constants.Messages.textConcatenation, Constants.Messages.Available, availables, Constants.Messages.Characters)
         
         return true
     }

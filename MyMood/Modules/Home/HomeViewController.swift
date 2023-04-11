@@ -37,7 +37,7 @@ class HomeViewController: UIViewController,
     
     private func configUI() {
 
-        cvMoodsCollection.register(UINib(nibName: Constants.cellIdentifier.MoodCell, bundle: Bundle.main), forCellWithReuseIdentifier: Constants.cellIdentifier.MoodCell)
+        cvMoodsCollection.register(UINib(nibName: Constants.Cells.MoodCell, bundle: Bundle.main), forCellWithReuseIdentifier: Constants.Cells.MoodCell)
     }
     
     private func showAnimation() {
@@ -99,7 +99,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellIdentifier.MoodCell, for: indexPath) as! MoodCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.Cells.MoodCell, for: indexPath) as! MoodCell
         
         cell.loadUI(presenter.moods[indexPath.row])
         

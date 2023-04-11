@@ -15,12 +15,11 @@ class MyMoodGraphRouter: NSObject {
     
     override init() {
         
-        storyboard = UIStoryboard(name: "MyMoodGraphView", bundle: nil)
+        storyboard = UIStoryboard(name: Constants.Storyboards.MyMoodGraph, bundle: nil)
         
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "MyMoodGraphView") as? MyMoodGraphViewController {
+        if let controller = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboards.MyMoodGraphView) as? MyMoodGraphViewController {
             
-            let presenter = MyMoodGraphPresenter(delegate: controller as? MyMoodGraphPresenterDelegate)
-            
+            let presenter = MyMoodGraphPresenter(delegate: controller)
             controller.presenter = presenter
             
             self.viewController = controller

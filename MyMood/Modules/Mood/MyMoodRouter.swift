@@ -15,9 +15,9 @@ import UIKit
     
     override init() {
 
-        storyboard = UIStoryboard(name: "MyMood", bundle: nil)
+        storyboard = UIStoryboard(name: Constants.Storyboards.MyMood, bundle: nil)
 
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "MyMoodView") as? MyMoodViewController {
+        if let controller = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboards.MyMoodView) as? MyMoodViewController {
             
             let presenter = MyMoodPresenter(delegate: controller)
             

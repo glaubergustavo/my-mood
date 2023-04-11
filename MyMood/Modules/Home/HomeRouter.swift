@@ -15,9 +15,9 @@ final class HomeRouter {
     
     init() {
         
-        storyboard = UIStoryboard(name: "Home", bundle: nil)
+        storyboard = UIStoryboard(name: Constants.Storyboards.Home, bundle: nil)
         
-        if let controller = storyboard.instantiateViewController(withIdentifier: "HomeView") as? HomeViewController {
+        if let controller = storyboard.instantiateViewController(withIdentifier: Constants.Storyboards.HomeView) as? HomeViewController {
             controller.presenter = HomePresenter()
             controller.presenter.delegate = controller
             viewController = controller

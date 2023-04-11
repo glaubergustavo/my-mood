@@ -91,7 +91,7 @@ class MyMoodGraphViewController: UIViewController,
         
         let backBtn = UIButton()
         backBtn.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        backBtn.setImage(UIImage(named: "left207"), for: .normal)
+        backBtn.setImage(UIImage(named: Constants.Images.LeftButton), for: .normal)
         backBtn.imageView?.image = backBtn.imageView?.image?.withTintColor(UIColor.yellowColor())
         backBtn.addTarget(self, action: #selector(self.dismissView), for: .touchUpInside)
         backBtn.widthAnchor.constraint(equalToConstant: 25).isActive = true
@@ -119,34 +119,34 @@ class MyMoodGraphViewController: UIViewController,
     private func configGraphHeaderView() {
         
         lblMonthYearMoodLine.textColor = UIColor(red: 0.383, green: 0.216, blue: 0.216, alpha: 1)
-        lblMonthYearMoodLine.font = UIFont(name: "Roboto-Bold", size: 16)
+        lblMonthYearMoodLine.font = UIFont(name: Constants.Fonts.RobotoBold, size: 16)
         
-        btnLeftArrowMoodLine.setImage(UIImage(named: "arrow_circle_left"), for: .normal)
-        btnLeftArrowMoodLine.setTitle("", for: .normal)
+        btnLeftArrowMoodLine.setImage(UIImage(named: Constants.Images.arrowCircleLeft), for: .normal)
+        btnLeftArrowMoodLine.setTitle(Constants.Messages.Empty, for: .normal)
         btnLeftArrowMoodLine.addTarget(self, action: #selector(didTapLeftArrowMoodGraph), for: .touchUpInside)
         
-        btnRighArrowMoodLine.setImage(UIImage(named: "arrow_circle_right"), for: .normal)
-        btnRighArrowMoodLine.setTitle("", for: .normal)
+        btnRighArrowMoodLine.setImage(UIImage(named: Constants.Images.arrowCircleRight), for: .normal)
+        btnRighArrowMoodLine.setTitle(Constants.Messages.Empty, for: .normal)
         btnRighArrowMoodLine.addTarget(self, action: #selector(didTapRightArrowMoodGraph), for: .touchUpInside)
     }
     
     private func configMoodSummaryHeaderView() {
         
         lblDateMoodSummary.textColor = UIColor(red: 0.383, green: 0.216, blue: 0.216, alpha: 1)
-        lblDateMoodSummary.font = UIFont(name: "Roboto-Bold", size: 16)
+        lblDateMoodSummary.font = UIFont(name: Constants.Fonts.RobotoBold, size: 16)
         
-        btnLeftArrowMoodSummary.setImage(UIImage(named: "arrow_circle_left"), for: .normal)
-        btnLeftArrowMoodSummary.setTitle("", for: .normal)
+        btnLeftArrowMoodSummary.setImage(UIImage(named: Constants.Images.arrowCircleLeft), for: .normal)
+        btnLeftArrowMoodSummary.setTitle(Constants.Messages.Empty, for: .normal)
         btnLeftArrowMoodSummary.addTarget(self, action: #selector(didTapLeftArrowMoodSummary), for: .touchUpInside)
         
-        btnRighArrowMoodSummary.setImage(UIImage(named: "arrow_circle_right"), for: .normal)
-        btnRighArrowMoodSummary.setTitle("", for: .normal)
+        btnRighArrowMoodSummary.setImage(UIImage(named: Constants.Images.arrowCircleRight), for: .normal)
+        btnRighArrowMoodSummary.setTitle(Constants.Messages.Empty, for: .normal)
         btnRighArrowMoodSummary.addTarget(self, action: #selector(didTapRightArrowMoodSummary), for: .touchUpInside)
     }
     
     private func configMoodGraph() {
         
-        tableViewMoodGraph.register(UINib(nibName: "MoodGraphCell", bundle: Bundle.main), forCellReuseIdentifier: "MoodGraphCell")
+        tableViewMoodGraph.register(UINib(nibName: Constants.Cells.MoodGraphCell, bundle: Bundle.main), forCellReuseIdentifier: Constants.Cells.MoodGraphCell)
         tableViewMoodGraph.roundCorners([.layerMaxXMaxYCorner, .layerMinXMaxYCorner], radius: 12)
         tableViewMoodGraph.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         tableViewMoodGraph.separatorStyle = .none
@@ -156,7 +156,7 @@ class MyMoodGraphViewController: UIViewController,
         
         self.vwSummary.roundCorners([.layerMaxXMaxYCorner, .layerMinXMaxYCorner], radius: 12)
         
-        tableViewMoodSummary.register(UINib(nibName: "MoodSummaryCell", bundle: Bundle.main), forCellReuseIdentifier: "MoodSummaryCell")
+        tableViewMoodSummary.register(UINib(nibName: Constants.Cells.MoodSummaryCell, bundle: Bundle.main), forCellReuseIdentifier: Constants.Cells.MoodSummaryCell)
         tableViewMoodSummary.roundCorners([.layerMaxXMaxYCorner, .layerMinXMaxYCorner], radius: 12)
         tableViewMoodSummary.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         tableViewMoodSummary.separatorStyle = .none
@@ -224,65 +224,73 @@ class MyMoodGraphViewController: UIViewController,
         lblPopupMood.text = setTitleMoodGraph(chartItem)
         imgPopupMood.image = setImageMoodGraph(chartItem)
         lblPopupHour.text = chartItem.dateRegister.convertStringToHour()
-        lblPopupDescription.text = "Motivos explicando o porque do seu humor"
+        lblPopupDescription.text = Constants.Messages.popupDescriptionTextMock
     }
     
     private func setTitleMoodGraph(_ chart: ChartItem) -> String? {
 
         switch chart.codHumor {
-        case 1:
-            return Constants.Messages.Lovesick
-        case 4:
-            return Constants.Messages.Happy
-        case 7:
-            return Constants.Messages.Sad
-        case 5:
-            return Constants.Messages.Amazed
-        case 8:
-            return Constants.Messages.Angry
-        case 6:
-            return Constants.Messages.Tired
-        case 3:
-            return Constants.Messages.Funny
-        case 10:
-            return Constants.Messages.Sick
-        case 9:
-            return Constants.Messages.Frustrated
-        case 2:
-            return Constants.Messages.Sleepy
-        default:
-            break
+            case 1:
+                return Constants.Messages.Lovesick
+            case 2:
+                return Constants.Messages.Sleepy
+            case 3:
+                return Constants.Messages.Funny
+            case 4:
+                return Constants.Messages.Happy
+            case 5:
+                return Constants.Messages.Amazed
+            case 6:
+                return Constants.Messages.Tired
+            case 7:
+                return Constants.Messages.Sad
+            case 8:
+                return Constants.Messages.Angry
+            case 9:
+                return Constants.Messages.Frustrated
+            case 10:
+                return Constants.Messages.Hungry
+            case 11:
+                return Constants.Messages.Sick
+            case 12:
+                return Constants.Messages.Worried
+            default:
+                break
         }
 
         return nil
     }
     
     
-    private func setImageMoodGraph(_ chart: ChartItem) -> UIImage? {
+    func setImageMoodGraph(_ chart: ChartItem) -> UIImage? {
         
         switch chart.codHumor {
-        case 1:
-            return UIImage(named: "ic_apaixonado")?.resized(to: CGSize(width: 30, height: 30))
-        case 4:
-            return UIImage(named: "ic_feliz")?.resized(to: CGSize(width: 30, height: 30))
-        case 7:
-            return UIImage(named: "ic_triste")?.resized(to: CGSize(width: 30, height: 30))
-        case 5:
-            return UIImage(named: "ic_espantado")?.resized(to: CGSize(width: 30, height: 30))
-        case 8:
-            return UIImage(named: "ic_raiva")?.resized(to: CGSize(width: 30, height: 30))
-        case 6:
-            return UIImage(named: "ic_entediado")?.resized(to: CGSize(width: 30, height: 30))
-        case 3:
-            return UIImage(named: "ic_engracado")?.resized(to: CGSize(width: 30, height: 30))
-        case 10:
-            return UIImage(named: "ic_doente")?.resized(to: CGSize(width: 30, height: 30))
-        case 9:
-            return UIImage(named: "ic_frustrado")?.resized(to: CGSize(width: 30, height: 30))
-        case 2:
-            return UIImage(named: "ic_sono")?.resized(to: CGSize(width: 30, height: 30))
-        default:
-            break
+            case 1:
+                return UIImage(named: Constants.Images.LovesickImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 2:
+                return UIImage(named: Constants.Images.SleepyImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 3:
+                return UIImage(named: Constants.Images.FunnyImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 4:
+                return UIImage(named: Constants.Images.HappyImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 5:
+                return UIImage(named: Constants.Images.AmazedImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 6:
+                return UIImage(named: Constants.Images.TiredImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 7:
+                return UIImage(named: Constants.Images.SadImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 8:
+                return UIImage(named: Constants.Images.AngryImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 9:
+                return UIImage(named: Constants.Images.FrustratedImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 10:
+                return UIImage(named: Constants.Images.HungryImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 11:
+                return UIImage(named: Constants.Images.SickImage)?.resized(to: CGSize(width: 30, height: 30))
+            case 12:
+                return UIImage(named: Constants.Images.WorriedImage)?.resized(to: CGSize(width: 30, height: 30))
+            default:
+                break
         }
         return nil
     }
@@ -359,7 +367,7 @@ class MyMoodGraphViewController: UIViewController,
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if tableView == tableViewMoodSummary {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MoodSummaryCell", for: indexPath) as? MoodSummaryCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.MoodSummaryCell, for: indexPath) as? MoodSummaryCell
             
             presenter.moodSummary = presenter.listMoodSummary[indexMoodSummary]
             let activity = presenter.moodSummary!.activities[indexPath.row]
@@ -371,7 +379,7 @@ class MyMoodGraphViewController: UIViewController,
             return cell ?? UITableViewCell()
         }else {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MoodGraphCell", for: indexPath) as? MoodGraphCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.MoodGraphCell, for: indexPath) as? MoodGraphCell
             
             presenter.moodGraph = presenter.listMoodGraph[indexMoodGraph]
             let chart = presenter.moodGraph.chart

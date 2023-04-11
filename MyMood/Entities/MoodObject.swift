@@ -22,17 +22,17 @@ class Mood: NSObject, NSCoding {
     
     // MARK: - NSCoding
     func encode(with coder: NSCoder) {
-        coder.encode(moodImg, forKey: "moodImg")
-        coder.encode(moodName, forKey: "moodName")
-        coder.encode(moodCod, forKey: "moodCod")
-        coder.encode(selected, forKey: "selected")
+        coder.encode(moodImg, forKey: Constants.NSCoding.KeyMoodImg)
+        coder.encode(moodName, forKey: Constants.NSCoding.KeyMoodName)
+        coder.encode(moodCod, forKey: Constants.NSCoding.KeyMoodCod)
+        coder.encode(selected, forKey: Constants.NSCoding.KeySelected)
     }
     
     required init?(coder: NSCoder) {
-        self.moodImg = coder.decodeObject(forKey: "moodImg") as? String ?? ""
-        self.moodName = coder.decodeObject(forKey: "moodName") as? String ?? ""
-        self.moodCod = coder.decodeInteger(forKey: "moodCod")
-        self.selected = coder.decodeBool(forKey: "selected")
+        self.moodImg = coder.decodeObject(forKey: Constants.NSCoding.KeyMoodImg) as? String ?? Constants.Messages.Empty
+        self.moodName = coder.decodeObject(forKey: Constants.NSCoding.KeyMoodName) as? String ?? Constants.Messages.Empty
+        self.moodCod = coder.decodeInteger(forKey: Constants.NSCoding.KeyMoodCod)
+        self.selected = coder.decodeBool(forKey: Constants.NSCoding.KeySelected)
     }
 }
 

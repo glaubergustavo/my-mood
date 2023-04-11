@@ -32,8 +32,6 @@ class xAxisValueFormatter: AxisValueFormatter {
             return formattedDates[findIndex(list: date, value: value) ?? 0]
         }
         
-        return ""
+        return Constants.Messages.Empty
     }
-    
-    
 }

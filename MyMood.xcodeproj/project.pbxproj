@@ -19,16 +19,6 @@
 		568C49AC29D4F7D400B7934C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C49A529D4F4BB00B7934C /* HomePresenter.swift */; };
 		568C49AD29D4F7D400B7934C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C49A329D4F4BB00B7934C /* HomeViewController.swift */; };
 		568C525B29D52C9600B7934C /* MoodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568C525A29D52C9600B7934C /* MoodObject.swift */; };
-		5694D6E129E230CE00043596 /* Transport.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6DF29E230CE00043596 /* Transport.json */; };
-		5694D6E929E23D8C00043596 /* Security.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6E729E23D8B00043596 /* Security.json */; };
-		5694D6EC29E2422000043596 /* Relationship.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6EA29E2422000043596 /* Relationship.json */; };
-		5694D6EF29E244A800043596 /* Finance.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6ED29E244A800043596 /* Finance.json */; };
-		5694D6F529E2477B00043596 /* Studies.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6F329E2477B00043596 /* Studies.json */; };
-		5694D6F829E2498800043596 /* Health.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6F629E2498800043596 /* Health.json */; };
-		5694D6FE29E24FFB00043596 /* Physique.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6FC29E24FFB00043596 /* Physique.json */; };
-		5694D70129E2511400043596 /* Leisure.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D6FF29E2511400043596 /* Leisure.json */; };
-		5694D70429E2531B00043596 /* Psychological.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D70229E2531B00043596 /* Psychological.json */; };
-		5694D70729E256ED00043596 /* Congratulations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694D70529E256ED00043596 /* Congratulations.json */; };
 		56984A9C29DFA46200A40FB9 /* UtilFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56984A9B29DFA46200A40FB9 /* UtilFacade.swift */; };
 		56AD43F729D618EC009D5DFD /* MoodGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43F629D618EC009D5DFD /* MoodGraph.swift */; };
 		56AD43F929D61915009D5DFD /* MoodSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD43F829D61915009D5DFD /* MoodSummary.swift */; };
@@ -41,7 +31,7 @@
 		56AD440B29D61B9D009D5DFD /* MyMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD440729D61B9D009D5DFD /* MyMoodViewController.swift */; };
 		56AD440C29D61B9D009D5DFD /* MyMoodManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD440829D61B9D009D5DFD /* MyMoodManager.swift */; };
 		56AD440D29D61B9D009D5DFD /* MyMoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD440929D61B9D009D5DFD /* MyMoodPresenter.swift */; };
-		56AD441329D61C32009D5DFD /* MyMoodGraphView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AD440E29D61C32009D5DFD /* MyMoodGraphView.storyboard */; };
+		56AD441329D61C32009D5DFD /* MyMoodGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AD440E29D61C32009D5DFD /* MyMoodGraph.storyboard */; };
 		56AD441429D61C32009D5DFD /* MyMoodGraphPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD440F29D61C32009D5DFD /* MyMoodGraphPresenter.swift */; };
 		56AD441529D61C32009D5DFD /* MyMoodGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD441029D61C32009D5DFD /* MyMoodGraphManager.swift */; };
 		56AD441629D61C32009D5DFD /* MyMoodGraphRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD441129D61C32009D5DFD /* MyMoodGraphRouter.swift */; };
@@ -53,6 +43,16 @@
 		56AD442129D61D1C009D5DFD /* MoodGraphCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AD441F29D61D1C009D5DFD /* MoodGraphCell.xib */; };
 		56AD442329D620BC009D5DFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD442229D620BC009D5DFD /* Constants.swift */; };
 		56B71D2B29E222DF00012AD5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 56B71D2A29E222DF00012AD5 /* Lottie */; };
+		56D0653A29E5C1B400C166A0 /* Relationship.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653129E5C1B300C166A0 /* Relationship.json */; };
+		56D0653B29E5C1B400C166A0 /* Health.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653229E5C1B300C166A0 /* Health.json */; };
+		56D0653C29E5C1B400C166A0 /* Leisure.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653329E5C1B300C166A0 /* Leisure.json */; };
+		56D0653D29E5C1B400C166A0 /* Security.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653429E5C1B300C166A0 /* Security.json */; };
+		56D0653E29E5C1B400C166A0 /* Physique.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653529E5C1B300C166A0 /* Physique.json */; };
+		56D0653F29E5C1B400C166A0 /* Transport.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653629E5C1B300C166A0 /* Transport.json */; };
+		56D0654029E5C1B400C166A0 /* Congratulations.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653729E5C1B300C166A0 /* Congratulations.json */; };
+		56D0654129E5C1B400C166A0 /* Studies.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653829E5C1B300C166A0 /* Studies.json */; };
+		56D0654229E5C1B400C166A0 /* Finance.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0653929E5C1B300C166A0 /* Finance.json */; };
+		56D0654429E5C28400C166A0 /* Psychological.json in Resources */ = {isa = PBXBuildFile; fileRef = 56D0654329E5C28400C166A0 /* Psychological.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,16 +82,6 @@
 		568C49A529D4F4BB00B7934C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		568C49A629D4F4BB00B7934C /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		568C525A29D52C9600B7934C /* MoodObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodObject.swift; sourceTree = "<group>"; };
-		5694D6E029E230CE00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Transport.json; sourceTree = "<group>"; };
-		5694D6E829E23D8B00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Security.json; sourceTree = "<group>"; };
-		5694D6EB29E2422000043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Relationship.json; sourceTree = "<group>"; };
-		5694D6EE29E244A800043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Finance.json; sourceTree = "<group>"; };
-		5694D6F429E2477B00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Studies.json; sourceTree = "<group>"; };
-		5694D6F729E2498800043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Health.json; sourceTree = "<group>"; };
-		5694D6FD29E24FFB00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Physique.json; sourceTree = "<group>"; };
-		5694D70029E2511400043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Leisure.json; sourceTree = "<group>"; };
-		5694D70329E2531B00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Psychological.json; sourceTree = "<group>"; };
-		5694D70629E256ED00043596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Congratulations.json; sourceTree = "<group>"; };
 		56984A9B29DFA46200A40FB9 /* UtilFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFacade.swift; sourceTree = "<group>"; };
 		56AD43F629D618EC009D5DFD /* MoodGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodGraph.swift; sourceTree = "<group>"; };
 		56AD43F829D61915009D5DFD /* MoodSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSummary.swift; sourceTree = "<group>"; };
@@ -104,7 +94,7 @@
 		56AD440729D61B9D009D5DFD /* MyMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodViewController.swift; sourceTree = "<group>"; };
 		56AD440829D61B9D009D5DFD /* MyMoodManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodManager.swift; sourceTree = "<group>"; };
 		56AD440929D61B9D009D5DFD /* MyMoodPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodPresenter.swift; sourceTree = "<group>"; };
-		56AD440E29D61C32009D5DFD /* MyMoodGraphView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyMoodGraphView.storyboard; sourceTree = "<group>"; };
+		56AD440E29D61C32009D5DFD /* MyMoodGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyMoodGraph.storyboard; sourceTree = "<group>"; };
 		56AD440F29D61C32009D5DFD /* MyMoodGraphPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodGraphPresenter.swift; sourceTree = "<group>"; };
 		56AD441029D61C32009D5DFD /* MyMoodGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodGraphManager.swift; sourceTree = "<group>"; };
 		56AD441129D61C32009D5DFD /* MyMoodGraphRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMoodGraphRouter.swift; sourceTree = "<group>"; };
@@ -115,6 +105,16 @@
 		56AD441E29D61D1C009D5DFD /* MoodGraphCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodGraphCell.swift; sourceTree = "<group>"; };
 		56AD441F29D61D1C009D5DFD /* MoodGraphCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoodGraphCell.xib; sourceTree = "<group>"; };
 		56AD442229D620BC009D5DFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		56D0653129E5C1B300C166A0 /* Relationship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Relationship.json; sourceTree = "<group>"; };
+		56D0653229E5C1B300C166A0 /* Health.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Health.json; sourceTree = "<group>"; };
+		56D0653329E5C1B300C166A0 /* Leisure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Leisure.json; sourceTree = "<group>"; };
+		56D0653429E5C1B300C166A0 /* Security.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Security.json; sourceTree = "<group>"; };
+		56D0653529E5C1B300C166A0 /* Physique.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Physique.json; sourceTree = "<group>"; };
+		56D0653629E5C1B300C166A0 /* Transport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Transport.json; sourceTree = "<group>"; };
+		56D0653729E5C1B300C166A0 /* Congratulations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Congratulations.json; sourceTree = "<group>"; };
+		56D0653829E5C1B300C166A0 /* Studies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Studies.json; sourceTree = "<group>"; };
+		56D0653929E5C1B300C166A0 /* Finance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Finance.json; sourceTree = "<group>"; };
+		56D0654329E5C28400C166A0 /* Psychological.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Psychological.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				568C498929D4F39000B7934C /* MyMood */,
+				56D0653029E5C1B300C166A0 /* Lottie Animations */,
 				568C498829D4F39000B7934C /* Products */,
 				5645D40029DCC3F500581F1C /* Frameworks */,
 			);
@@ -169,22 +170,13 @@
 			children = (
 				568C522C29D5215400B7934C /* Entities */,
 				568C522929D520EF00B7934C /* Util */,
+				56EC71C229E5B99800667750 /* Classes */,
 				568BEE7C29E12ACD000518BA /* Modules */,
 				568C498A29D4F39000B7934C /* AppDelegate.swift */,
 				568C498C29D4F39000B7934C /* SceneDelegate.swift */,
 				568C499329D4F39300B7934C /* Assets.xcassets */,
 				568C499529D4F39300B7934C /* LaunchScreen.storyboard */,
 				568C499829D4F39300B7934C /* Info.plist */,
-				5694D6DF29E230CE00043596 /* Transport.json */,
-				5694D6E729E23D8B00043596 /* Security.json */,
-				5694D6EA29E2422000043596 /* Relationship.json */,
-				5694D6ED29E244A800043596 /* Finance.json */,
-				5694D6F329E2477B00043596 /* Studies.json */,
-				5694D6F629E2498800043596 /* Health.json */,
-				5694D6FC29E24FFB00043596 /* Physique.json */,
-				5694D6FF29E2511400043596 /* Leisure.json */,
-				5694D70229E2531B00043596 /* Psychological.json */,
-				5694D70529E256ED00043596 /* Congratulations.json */,
 			);
 			path = MyMood;
 			sourceTree = "<group>";
@@ -220,7 +212,6 @@
 				56AD43FE29D61A18009D5DFD /* Extension.swift */,
 				56AD442229D620BC009D5DFD /* Constants.swift */,
 				56984A9B29DFA46200A40FB9 /* UtilFacade.swift */,
-				566CC31D29E4CD6700159BD9 /* xAxisValueFormatter.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -260,7 +251,7 @@
 			children = (
 				568C523529D522FC00B7934C /* MoodGraphCell */,
 				568C523C29D5245600B7934C /* MoodSummaryCell */,
-				56AD440E29D61C32009D5DFD /* MyMoodGraphView.storyboard */,
+				56AD440E29D61C32009D5DFD /* MyMoodGraph.storyboard */,
 				56AD441229D61C32009D5DFD /* MyMoodGraphViewController.swift */,
 				56AD440F29D61C32009D5DFD /* MyMoodGraphPresenter.swift */,
 				56AD441029D61C32009D5DFD /* MyMoodGraphManager.swift */,
@@ -276,6 +267,32 @@
 				56AD440229D61AD4009D5DFD /* MoodCell.swift */,
 			);
 			path = MoodCell;
+			sourceTree = "<group>";
+		};
+		56D0653029E5C1B300C166A0 /* Lottie Animations */ = {
+			isa = PBXGroup;
+			children = (
+				56D0653129E5C1B300C166A0 /* Relationship.json */,
+				56D0653229E5C1B300C166A0 /* Health.json */,
+				56D0653329E5C1B300C166A0 /* Leisure.json */,
+				56D0653429E5C1B300C166A0 /* Security.json */,
+				56D0653529E5C1B300C166A0 /* Physique.json */,
+				56D0653629E5C1B300C166A0 /* Transport.json */,
+				56D0653729E5C1B300C166A0 /* Congratulations.json */,
+				56D0653829E5C1B300C166A0 /* Studies.json */,
+				56D0653929E5C1B300C166A0 /* Finance.json */,
+				56D0654329E5C28400C166A0 /* Psychological.json */,
+			);
+			name = "Lottie Animations";
+			path = "MyMood/Lottie Animations";
+			sourceTree = "<group>";
+		};
+		56EC71C229E5B99800667750 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				566CC31D29E4CD6700159BD9 /* xAxisValueFormatter.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,22 +364,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5694D6EF29E244A800043596 /* Finance.json in Resources */,
 				568C499729D4F39300B7934C /* LaunchScreen.storyboard in Resources */,
+				56D0653D29E5C1B400C166A0 /* Security.json in Resources */,
 				568C499429D4F39300B7934C /* Assets.xcassets in Resources */,
-				5694D70729E256ED00043596 /* Congratulations.json in Resources */,
-				5694D70429E2531B00043596 /* Psychological.json in Resources */,
+				56D0654429E5C28400C166A0 /* Psychological.json in Resources */,
 				568C49A929D4F7D400B7934C /* Home.storyboard in Resources */,
-				5694D6E929E23D8C00043596 /* Security.json in Resources */,
 				56AD440529D61AF1009D5DFD /* MoodCell.xib in Resources */,
-				5694D6F529E2477B00043596 /* Studies.json in Resources */,
-				5694D6FE29E24FFB00043596 /* Physique.json in Resources */,
-				56AD441329D61C32009D5DFD /* MyMoodGraphView.storyboard in Resources */,
-				5694D6E129E230CE00043596 /* Transport.json in Resources */,
-				5694D6EC29E2422000043596 /* Relationship.json in Resources */,
+				56D0654129E5C1B400C166A0 /* Studies.json in Resources */,
+				56D0654229E5C1B400C166A0 /* Finance.json in Resources */,
+				56D0653F29E5C1B400C166A0 /* Transport.json in Resources */,
+				56AD441329D61C32009D5DFD /* MyMoodGraph.storyboard in Resources */,
+				56D0653C29E5C1B400C166A0 /* Leisure.json in Resources */,
 				56AD441929D61C6C009D5DFD /* MyMood.storyboard in Resources */,
-				5694D6F829E2498800043596 /* Health.json in Resources */,
-				5694D70129E2511400043596 /* Leisure.json in Resources */,
+				56D0653E29E5C1B400C166A0 /* Physique.json in Resources */,
+				56D0653A29E5C1B400C166A0 /* Relationship.json in Resources */,
+				56D0653B29E5C1B400C166A0 /* Health.json in Resources */,
+				56D0654029E5C1B400C166A0 /* Congratulations.json in Resources */,
 				56AD441D29D61CB5009D5DFD /* MoodSummaryCell.xib in Resources */,
 				56AD442129D61D1C009D5DFD /* MoodGraphCell.xib in Resources */,
 			);
@@ -413,86 +430,6 @@
 				568C499629D4F39300B7934C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5694D6DF29E230CE00043596 /* Transport.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6E029E230CE00043596 /* Base */,
-			);
-			name = Transport.json;
-			sourceTree = "<group>";
-		};
-		5694D6E729E23D8B00043596 /* Security.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6E829E23D8B00043596 /* Base */,
-			);
-			name = Security.json;
-			sourceTree = "<group>";
-		};
-		5694D6EA29E2422000043596 /* Relationship.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6EB29E2422000043596 /* Base */,
-			);
-			name = Relationship.json;
-			sourceTree = "<group>";
-		};
-		5694D6ED29E244A800043596 /* Finance.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6EE29E244A800043596 /* Base */,
-			);
-			name = Finance.json;
-			sourceTree = "<group>";
-		};
-		5694D6F329E2477B00043596 /* Studies.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6F429E2477B00043596 /* Base */,
-			);
-			name = Studies.json;
-			sourceTree = "<group>";
-		};
-		5694D6F629E2498800043596 /* Health.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6F729E2498800043596 /* Base */,
-			);
-			name = Health.json;
-			sourceTree = "<group>";
-		};
-		5694D6FC29E24FFB00043596 /* Physique.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D6FD29E24FFB00043596 /* Base */,
-			);
-			name = Physique.json;
-			sourceTree = "<group>";
-		};
-		5694D6FF29E2511400043596 /* Leisure.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D70029E2511400043596 /* Base */,
-			);
-			name = Leisure.json;
-			sourceTree = "<group>";
-		};
-		5694D70229E2531B00043596 /* Psychological.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D70329E2531B00043596 /* Base */,
-			);
-			name = Psychological.json;
-			sourceTree = "<group>";
-		};
-		5694D70529E256ED00043596 /* Congratulations.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5694D70629E256ED00043596 /* Base */,
-			);
-			name = Congratulations.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
