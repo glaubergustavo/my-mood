@@ -42,6 +42,15 @@ extension UIView {
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowRadius = 4
     }
+    
+    func shadowAnimation(transform: CGAffineTransform, size: CGSize) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.transform = transform
+            self.layer.shadowOpacity = 1
+            self.layer.shadowOffset = size
+            self.layer.shadowRadius = 4
+        })
+    }
 }
 
 extension LottieAnimationView {

@@ -303,22 +303,12 @@ import Lottie
                 selectedMotives.remove(at: index)
             }
             
-            UIView.animate(withDuration: 0.3, animations: {
-                view.transform = CGAffineTransform.identity
-                view.layer.shadowOpacity = 1
-                view.layer.shadowOffset = CGSize(width: 0, height: 2)
-                view.layer.shadowRadius = 4
-            })
+            view.shadowAnimation(transform: CGAffineTransform.identity, size: CGSize(width: 0, height: 2))
         }else {
             
             self.selectedMotives.append(view.tag)
             
-            UIView.animate(withDuration: 0.3, animations: {
-                view.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                view.layer.shadowOpacity = 1
-                view.layer.shadowOffset = CGSize(width: 0, height: -5)
-                view.layer.shadowRadius = 4
-            })
+            view.shadowAnimation(transform: CGAffineTransform(scaleX: 0.9, y: 0.9), size: CGSize(width: 0, height: -5))
         }
     }
     
