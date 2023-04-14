@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Charts
+import Lottie
 
 extension UIColor {
     static func yellowColor() -> UIColor {
@@ -32,7 +33,31 @@ extension UIView {
         self.layer.cornerRadius = radius
         self.layer.maskedCorners = corners
     }
+    
+    func configViewAppearance(with tag: Int) {
+        self.tag = tag
+        self.layer.cornerRadius = 12
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowRadius = 4
+    }
 }
+
+extension LottieAnimationView {
+    
+    static func setup(withName name: String, frame: CGRect, addToView view: UIView) {
+        
+        let animationView = LottieAnimationView(name: name)
+        animationView.loopMode = .loop
+        animationView.contentMode = .scaleAspectFill
+        animationView.frame = frame
+        animationView.animationSpeed = 1.0
+        animationView.play()
+        view.addSubview(animationView)        
+    }
+}
+
 
 extension String {
     func convertStringToDay() -> Double? {
